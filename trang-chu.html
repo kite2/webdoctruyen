@@ -6,17 +6,17 @@
     <link rel="stylesheet" type="text/css" href="trang-chu.css">
 </head>
 <body>
-    <div id="logo">
+<div id="logo">
         <a href="#"><img src="logo.png" alt="day la logo" style="width: 300px;height: 100px">
         </a>
-    </div>
-    <div id="tim">
+</div>
+<div id="tim">
         <form action="#" method="get">
             <input type="text" name ="ten" size="100"/>
             <input type="submit" value="Tìm Kiếm Truyện">
         </form>
-    </div>
-    <div id="nav">
+</div>
+<div id="nav">
         <ul>
             <li> <a href="#">Trang Chủ</a> </li>
             <li><a href="#">Thể loại</a>
@@ -34,9 +34,77 @@
     </div>
     <div id="menu-left">
         <ul>
-            <li>Truyện hot</li>
-
+            <li style="font-size: 20px;color: red">Truyện hot</li>
+            <li><a href="#">Ngôn tình</a> </li>
+            <li><a href="#">Tryện Teen</a> </li>
+            <li><a href="#">Truyện Kiếm Hiệp</a> </li>
+            <li><a href="#">Truyện Tranh</a> </li>
+            <li><a href="#">Truyện Tiên Hiệp</a> </li>
+            <li><a href="#">Truyện Trinh Thám</a> </li>
+        </ul>
+</div>
+<div id="list-hot">
+        <ul>
+            <li><a href="#"><img src="hot1.jpg" alt="hot1"></a><br>
+                <a href="#" >Truyệt hot 1</a></li>
+            <li><a href="#"><img src="hot2.jpg" alt="hot1"></a><br>
+                <a href="#" >Truyệt hot 2</a></li>
+            <li><a href="#"><img src="hot3.jpg" alt="hot1"></a><br>
+                <a href="#" >Truyệt hot 3</a></li>
+            <li><a href="#"><img src="hot4.jpg" alt="hot1"></a><br>
+                <a href="#" >Truyệt hot 4</a></li>
+            <li><a href="#"><img src="hot5.jpg" alt="hot1"></a><br>
+                <a href="#" >Truyệt hot 5</a></li>
+        </ul>
+</div>
+<div id="content-1">
+    <div class="can-giua">
+        <form action="#" method="get">
+            <center>
+                <table style="width:70%;text-align:center; padding-top:10px;">
+                    <tr>
+                        <td>
+                            <select name="the-loai">
+                                <option value="">Thể Loại</option>
+                                <option value="TT">Trinh Thám</option>
+                                <option value="NT">Ngôn Tình</option>
+                                <option value="KH">Kiếm Hiệp</option>
+                                <option value="TT1">Truyện Tranh</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select name="moi-update">
+                                <option value="">Xếp Theo</option>
+                                <option value="new">Mới update</option>
+                                <option value="tm">Truyện mới</option>
+                                <option value="dn">Đọc nhiều</option>
+                                <option value="top">Top tuần</option>
+                            </select>
+                        </td>
+                        <td>
+                            <input type="checkbox" name="full">Truyện Full
+                        </td>
+                        <td>
+                            <button type="submit" value="timkiem">Tìm Truyện</button>
+                        </td>
+                    </tr>
+                </table>
+            </center>
+        </form>
+    </div>
+    <div id="list-story">
+        <ul class="m10t">
+            <li class="block" style="width: 100%">
+                <div class="story-info">
+                    <div class="float-left" style="display: table">
+                        <a href="#" style="text-decoration: none"><img class="hinh" src="truyenmoiupdate(1).jpg"
+                                                                       alt="truyenmoiupdate1">
+                        </a>
+                    </div>
+                </div>
+            </li>
         </ul>
     </div>
+</div>
 </body>
 </html>
