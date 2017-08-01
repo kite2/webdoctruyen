@@ -1,6 +1,8 @@
 body{
     font-family: Arial,sans-serif;
     background-color: aliceblue;
+    width: 1336px;
+    height: 2690px;
 }
 #logo{
     width: 400px;
@@ -81,11 +83,11 @@ body{
     line-height: 30px;
 }
 #list-hot{
-    width: 1067px;
+    width: 1100px;
     height: 250px;
     float: left;
     background-color: white;
-    margin: 10px;
+    margin: 10px 10px 10px 25px;
 }
 #list-hot ul{
     list-style: none;
@@ -122,6 +124,8 @@ body{
 .m10t{
     margin-top: 10px;
 }
+
+
 .block{
     float: left;
     position: relative;
@@ -193,8 +197,8 @@ a{
     float: left;
 }
 #rightBar{
-    width: 350px;
-    height: 450px;
+    width: 330px;
+    height: 650px;
     float: right;
     background-color: white;
     margin: 10px;
@@ -203,11 +207,12 @@ a{
 
 .fixRightBar{
     margin: 15px;
-
+    height: 600px;
+    width: 300px;
 }
 
 .titleRightBar{
-    width: 350px;
+    width: 300px;
     height: 40px;
     color: #555;
 }
@@ -220,7 +225,9 @@ a{
     color: coral;
     text-decoration: none;
 }
-
+.m10l{
+    padding-left: -40px;
+}
 .luot{
     color: gainsboro;
 }
