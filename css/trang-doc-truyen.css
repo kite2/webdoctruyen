@@ -1,0 +1,83 @@
+html{
+    font-family:sans-serif;
+    -webkit-text-size-adjust:100%;
+    -ms-text-size-adjust:100%;
+}
+
+html{
+    font-family:sans-serif;
+    -webkit-text-size-adjust:100%;
+    -ms-text-size-adjust:100%;
+}
+
+html{
+    font-family:sans-serif;
+    -webkit-text-size-adjust:100%;
+    -ms-text-size-adjust:100%;
+}
+
+html{
+    font-family:sans-serif;
+    -webkit-text-size-adjust:100%;
+    -ms-text-size-adjust:100%;
+}
+
+nav.navbar.navbar-default{
+    background-color:rgb(255,228,196);
+}
+
+a.dropdown-toggle{
+    background-color:bisque;
+}
+
+a.dropdown-toggle{
+    background-color:rgb(255,228,196);
+}
+
+a.dropdown-toggle{
+    background-color:bisque;
+}
+
+a.dropdown-toggle{
+    background-color:bisque;
+}
+
+a.dropdown-toggle{
+    background-color:rgb(255,228,196);
+}
+
+a.dropdown-toggle{
+    background-color:bisque;
+}
+
+ul.dropdown-menu{
+    background-color:bisque;
+}
+
+input{
+    width:60%;
+}
+
+a{
+    text-decoration:none;
+    color:green;
+}
+
+input.form-control{
+    width:60px;
+    float:left;
+}
+
+span{
+    float:left;
+    font-size:large;
+}
+
+button.navbar-toggle.collapsed{
+}
+
+#footer {
+    width: 100%;
+    height: 220px;
+    text-align: center;
+}

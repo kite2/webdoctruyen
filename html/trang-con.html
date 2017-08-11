@@ -1,39 +1,293 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta name="viewport" content="width = device-width, initial-scale=1.0" charset="UTF-8">
     <title>Trang Con</title>
-    <link rel="stylesheet" type="text/css" href="trang-con.css">
+    <link rel="stylesheet" type="text/css" href="../css/trang-con.css">
+    <script type="text/javascript" src="../js/jquery-3.2.1.min.js"></script>
 </head>
 <body>
 <div id="logo">
-    <a href="#"><img src="logo.png" alt="day la logo" style="width: 300px;height: 100px">
+    <a href="../index.html"><img src="../images/logo.png" alt="day la logo" style="width: 300px;height: 100px">
     </a>
 </div>
 <div id="tim">
     <form action="#" method="get">
-        <input type="text" name ="ten" size="100"/>
+        <input type="search" style="width: 70%">
         <input type="submit" value="Tìm Kiếm Truyện">
     </form>
 </div>
 <div id="nav">
     <ul>
-        <li> <a href="#">Trang Chủ</a> </li>
+        <li><a href="#">Trang Chủ</a></li>
         <li><a href="#">Thể loại</a>
             <ul>
-                <li> <a href="#">Trinh Thám</a> </li>
-                <li> <a href="#">Kiếm Hiệp</a> </li>
-                <li> <a href="#">Tiên Hiệp</a> </li>
-                <li> <a href="#">Ngôn Tình</a> </li>
+                <li><a href="#">Trinh Thám</a></li>
+                <li><a href="#">Kiếm Hiệp</a></li>
+                <li><a href="#">Tiên Hiệp</a></li>
+                <li><a href="#">Ngôn Tình</a></li>
             </ul>
         </li>
-        <li> <a href="#">Truyện hot</a> </li>
-        <li> <a href="#">Truyện tranh</a> </li>
-        <li> <a href="#">Truyện audio</a> </li>
+        <li><a href="#">Truyện hot</a></li>
+        <li><a href="#">Truyện tranh</a></li>
+        <li><a href="#">Truyện audio</a></li>
     </ul>
+    <a href="#" class="icon" onclick="show()">&#9776;</a>
 </div>
+<script>
+    $(function() {
+        var pull        = $('.icon');
+        menu        = $('#nav ul');
+        menuHeight  = menu.height();
+
+        $(pull).on('click', function(e) {
+            e.preventDefault();
+            menu.slideToggle();
+        });
+    });
+    $(window).resize(function(){
+        var w = $(window).width();
+        if(w > 320 && menu.is(':hidden')) {
+            menu.removeAttr('style');
+        }
+    });
+</script>
 <div id="content">
-    <
+    <div id = "bookinfo">
+        <div class="anh-truyen">
+            <img src="../images/truyenchitiet/truyenchitiet.jpg" alt="Đây là truyện chi tiết"
+                 style="width: 200px; height: 230px; margin-top: 10px">
+        </div>
+        <div class="thong-tin-truyen">
+            <h1 style="text-transform: uppercase; font-size: 17px; text-align: center">Có Hợp Có Tan</h1>
+            <p class="can-giua">Tác giả: Lâu Vũ Tinh</p>
+            <p class="can-giua">Thể loại: Ngôn Tình</p>
+            <p class="can-giua">Nguồn dịch: http://supertruyen.com</p>
+            <p class="can-giua">Số Chương: 33</p>
+            <p class="can-giua">Trạng Thái: Còn tiếp</p>
+            <p class="can-giua">Số lần đọc: 25578</p>
+            <div  class="button-bookmark">
+                <a class="button" href="trang-doc-truyen.html">Đọc Từ Đầu</a>
+                <a class="button" href="trang-doc-truyen.html">Đọc Tiếp</a>
+                <a class="button" id="button" href="#chaplist">Danh Sách Chương</a>
+            </div>
+        </div>
+    </div> <br>
+    <div class="mieu-ta" style="padding: 10px">
+        <p class="chu-nho">Nội Dung Truyện : Ngoài Tiền Ra, Tớ Còn Thích Cả Cậu Nữa</p>
+        <p class="chu-nho">- Đẹp trai có ăn được không ???</p>
+        <p class="chu-nho">- Không</p>
+        <p class="chu-nho">- Vậy giá trị của cậu còn chẳng bằng gói mì tôm nữa đó</p>
+        <p class="chu-nho">-...</p>
+        <p class="chu-nho">Nguyễn Hoài An, cô gái 17 tuổi với lối sống 3 THAM: THAM ĂN - THAM TIỀN - THAM SỐNG SỢ CHẾT. Tôn chỉ sống của</p>
+        <p class="chu-nho">cô là : " Người không vì mình, trời chu đất diệt". Tính cách thì vui vẻ độc lập nhưng lại hơi nhỏ mọn, thực dụng và thù dai,...</p>
+        <p class="chu-nho">Một cô gái mạnh mẽ và có phần kỳ quặc như vậy, chàng trai nào sẽ chiếm trọn trái tim cô ???.</p>
+        <p class="chu-nho">Nhiều điều bất ngờ đang chờ đợi ở phía trước. Tôi chỉ có thể bật mí cho các bạn rằng: Câu chuyện sẽ khiến bạn rơi nước</p>
+        <p class="chu-nho">mắt......vì cười quá nhiều haha</p>
+        <p class="chu-nho">--------*****---------</p>
+        <p class="chu-nho">Đây là tác phẩm đầu tay của mình nên hẳn là rất "non và xanh" với nhiều điều thiếu sót, rất mong các bạn gần xa đón đọc</p>
+        <p class="chu-nho">và góp ý giúp mình nhé. mình xin ghi nhận và rút kinh nghiệm. Chúc các bạn đọc truyện vui vẻ nha</p>
+    </div>
+    <a id="doc-them" style="float: right; padding-right: 20px;color: orange"  onclick="doc_them()">Đọc thêm</a>
+    <a id="rut-gon" style="float: right; padding-right: 20px; color: orange" onclick="rut_gon()">Rút gọn</a>
+    <script>
+        $("#rut-gon").hide()
+
+        function doc_them() {
+            $("#doc-them").hide();
+            $(".mieu-ta").css("max-height","100%");
+            $("#rut-gon").show();
+        }
+
+        function rut_gon() {
+            $("#doc-them").show();
+            $(".mieu-ta").css("max-height","110px");
+            $("#rut-gon").hide();
+        }
+    </script>
+    <br>
+    <div class="danh-sach-chuong">
+        <h3 id="chaplist" style="margin-left: 20px; text-transform: uppercase; text-align: center; color: orange">danh sách chương</h3>
+        <div style="margin-top: 20px; padding-left: 20px; padding-bottom: 20px">
+            <a href="trang-doc-truyen.html" style="color:grey;">Chương 1 Mở Đầu</a> <br>
+            <a href="trang-doc-truyen.html" style="color:grey;">Chương 2 Tôi Tiếp Đón Cô</a> <br>
+            <a href="trang-doc-truyen.html" style="color:grey;">Chương 3 Có ý định đào góc tường</a> <br>
+            <a href="trang-doc-truyen.html" style="color:grey;">Chương 4 </a> <br>
+            <a href="trang-doc-truyen.html" style="color:grey;">Chương 5 </a> <br>
+            <a href="trang-doc-truyen.html" style="color:grey;">Chương 6 </a> <br>
+            <a href="trang-doc-truyen.html" style="color:grey;">Chương 7 </a> <br>
+            <a href="trang-doc-truyen.html" style="color:grey;">Chương 8 </a> <br>
+            <a href="trang-doc-truyen.html" style="color:grey;">Chương 9 </a> <br>
+            <a href="trang-doc-truyen.html" style="color:grey;">Chương 10 </a> <br>
+            <a href="trang-doc-truyen.html" style="color:grey;">Chương 11 </a> <br>
+            <a href="trang-doc-truyen.html" style="color:grey;">Chương 12 </a> <br>
+            <a href="trang-doc-truyen.html" style="color:grey;">Chương 13 </a> <br>
+            <a href="trang-doc-truyen.html" style="color:grey;">Chương 14 </a> <br>
+            <a href="trang-doc-truyen.html" style="color:grey;">Chương 15 </a> <br>
+            <a href="trang-doc-truyen.html" style="color:grey;">Chương 16 </a> <br>
+            <a href="trang-doc-truyen.html" style="color:grey;">Chương 17 </a> <br>
+            <a href="trang-doc-truyen.html" style="color:grey;">Chương 18 </a> <br>
+            <a href="trang-doc-truyen.html" style="color:grey;">Chương 19 </a> <br>
+            <a href="trang-doc-truyen.html" style="color:grey;">Chương 20 </a> <br>
+            <a href="trang-doc-truyen.html" style="color:grey;">Chương 21 </a> <br>
+            <a href="trang-doc-truyen.html" style="color:grey;">Chương 22 </a> <br>
+            <a href="trang-doc-truyen.html" style="color:grey;">Chương 23 </a> <br>
+            <a href="trang-doc-truyen.html" style="color:grey;">Chương 24 </a> <br>
+            <a href="trang-doc-truyen.html" style="color:grey;">Chương 25 </a> <br>
+            <a href="trang-doc-truyen.html" style="color:grey;">Chương 26 </a> <br>
+            <a href="trang-doc-truyen.html" style="color:grey;">Chương 27 </a> <br>
+            <a href="trang-doc-truyen.html" style="color:grey;">Chương 28 </a> <br>
+            <a href="trang-doc-truyen.html" style="color:grey;">Chương 29 </a> <br>
+            <a href="trang-doc-truyen.html" style="color:grey;">Chương 30 </a> <br>
+            <a href="trang-doc-truyen.html" style="color:grey;">Chương 31 </a> <br>
+            <a href="trang-doc-truyen.html" style="color:grey;">Chương 32 </a> <br>
+            <a href="trang-doc-truyen.html" style="color:grey;">Chương 33 </a> <br>
+            <a href="trang-doc-truyen.html" style="color:grey;">Chương 34 </a> <br>
+        </div>
+    </div>
+</div>
+<div class="rightBar">
+    <div class="fixRightBar">
+        <div class="titleRightBar">
+            <h2 style="line-height: 40px">Truyện Cùng Tác Giả</h2>
+        </div>
+        <ul class="m10t">
+            <li style="color: red">1</li>
+            <li><a class="colorBar" href="#">Ma Thần Tướng Quân</a> </li>
+        </ul>
+        <div class="clear"></div>
+        <ul class="m10t">
+            <li style="color: red">2</li>
+            <li><a class="colorBar" href="#">Vòng 7 Người</a> </li>
+        </ul>
+        <div class="clear"></div>
+        <ul class="m10t">
+            <li style="color: red">3</li>
+            <li><a class="colorBar" href="#">Sau Li Hôn</a> </li>
+        </ul>
+        <div class="clear"></div>
+        <ul class="m10t">
+            <li style="color: orange">4</li>
+            <li><a class="colorBar" href="#">Thuần Dưỡng</a> </li>
+        </ul>
+        <div class="clear"></div>
+        <ul class="m10t">
+            <li style="color: orange">5</li>
+            <li><a class="colorBar" href="#">Hồng Nhan Say Yêu</a> </li>
+        </ul>
+        <div class="clear"></div>
+        <ul class="m10t">
+            <li style="color: orange">6</li>
+            <li><a class="colorBar" href="#">Hành Trình Ở Viễn Cổ</a> </li>
+        </ul>
+        <div class="clear"></div>
+        <ul class="m10t">
+            <li style="color: orange">7</li>
+            <li><a class="colorBar" href="#">Lão Tử Kiếm</a> </li>
+        </ul>
+        <div class="clear"></div>
+        <ul class="m10t">
+            <li style="color: orange">8</li>
+            <li><a class="colorBar" href="#">Bốn Chàng Hoàng Tử</a> </li>
+        </ul>
+        <div class="clear"></div>
+        <ul class="m10t">
+            <li style="color: orange">9</li>
+            <li><a class="colorBar" href="#">Hiền Thê Khó Làm</a> </li>
+        </ul>
+        <div class="clear"></div>
+        <ul class="m10t">
+            <li style="color: orange">10</li>
+            <li><a class="colorBar" href="#">Hiền Thê Xui Xẻo</a> </li>
+        </ul>
+        <div class="clear"></div>
+    </div>
+</div>
+<div class="rightBar">
+    <div class="fixRightBar">
+        <div class="titleRightBar">
+            <h3 style="line-height: 40px">Truyện Có Thể Bạn Muốn Đọc</h3>
+        </div> <br>
+        <div style="margin-bottom: 10px">
+        <div style="float: left; position: relative">
+            <a href="#">
+                <img src="../images/truyenngontinh/truyenmoiupdate(1).jpg" width="74" height="74" >
+            </a>
+        </div>
+        <div style="float: left">
+            <a href="#" style="color: orange">Truyện Gợi Ý 1</a> <br>
+            <span>Thể loại: Ngôn Tình</span> <br>
+            <span>Tác Giả: xoxo</span>
+        </div>
+    </div>
+        <div class="clear"></div> <br>
+        <div style="margin-bottom: 10px">
+            <div style="float: left; position: relative">
+                <a href="#">
+                    <img src="../images/truyenngontinh/truyenmoiupdate(1).jpg" width="74" height="74" >
+                </a>
+            </div>
+            <div style="float: left">
+                <a href="#" style="color: orange">Truyện Gợi Ý 2</a> <br>
+                <span>Thể loại: Ngôn Tình</span> <br>
+                <span>Tác Giả: xoxo</span>
+            </div>
+        </div>
+        <div class="clear"></div> <br>
+        <div style="margin-bottom: 10px">
+            <div style="float: left; position: relative">
+                <a href="#">
+                    <img src="../images/truyenngontinh/truyenmoiupdate(1).jpg" width="74" height="74" >
+                </a>
+            </div>
+            <div style="float: left">
+                <a href="#" style="color: orange">Truyện Gợi Ý 3</a> <br>
+                <span>Thể loại: Ngôn Tình</span> <br>
+                <span>Tác Giả: xoxo</span>
+            </div>
+        </div>
+        <div class="clear"></div> <br>
+        <div style="margin-bottom: 10px">
+            <div style="float: left; position: relative">
+                <a href="#">
+                    <img src="../images/truyenngontinh/truyenmoiupdate(1).jpg" width="74" height="74" >
+                </a>
+            </div>
+            <div style="float: left">
+                <a href="#" style="color: orange">Truyện Gợi Ý 4</a> <br>
+                <span>Thể loại: Ngôn Tình</span> <br>
+                <span>Tác Giả: xoxo</span>
+            </div>
+        </div>
+        <div class="clear"></div> <br>
+        <div style="margin-bottom: 10px">
+            <div style="float: left; position: relative">
+                <a href="#">
+                    <img src="../images/truyenngontinh/truyenmoiupdate(1).jpg" width="74" height="74" >
+                </a>
+            </div>
+            <div style="float: left">
+                <a href="#" style="color: orange">Truyện Gợi Ý 5</a> <br>
+                <span>Thể loại: Ngôn Tình</span> <br>
+                <span>Tác Giả: xoxo</span>
+            </div>
+        </div>
+        <div class="clear"></div> <br>
+        <div style="margin-bottom: 10px">
+            <div style="float: left; position: relative">
+                <a href="#">
+                    <img src="../images/truyenngontinh/truyenmoiupdate(1).jpg" width="74" height="74" >
+                </a>
+            </div>
+            <div style="float: left">
+                <a href="#" style="color: orange">Truyện Gợi Ý 6</a> <br>
+                <span>Thể loại: Ngôn Tình</span> <br>
+                <span>Tác Giả: xoxo</span>
+            </div>
+        </div>
+        <div class="clear"></div> <br>
+
+    </div>
 </div>
 <div class="clear"></div>
 <div id="footer">
